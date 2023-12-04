@@ -12,8 +12,10 @@
 
 ![6b899130697211ee9beeabaccec472a7](https://github.com/squares-quv/squares-configs/assets/150637735/b80c246a-9245-48e2-943c-4d3c96740349)
 
-# ⚙️ Squares Configs
-ESLint plugin for Squares
+<br>
+
+## @squares/eslint-plugin
+ESLint & Prettier plugin for Squares
 
 <br>
 

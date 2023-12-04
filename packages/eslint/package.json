@@ -1,6 +1,6 @@
 {
     "name": "@squares/eslint-plugin",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "squares eslint custom plugin and config",
     "repository": {
         "type": "git",

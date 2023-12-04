@@ -1,5 +1,11 @@
 # @squares/eslint-plugin
 
+## 0.0.6
+
+### Patch Changes
+
+- 292c274: text change
+
 ## 0.0.5
 
 ### Patch Changes

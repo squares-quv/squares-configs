@@ -31,6 +31,18 @@ yarn add -D @squares/eslint-plugin eslint prettier
 <br>
 
 ## 🔨Usage
+#### VSCode setting
+```console
+// .vscode/setting.json, 파일 저장 시 자동 fix 처리를 위해 설정 추가
+{
+  ...
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+  ...
+}
+```
+
 #### Your Project (.esilntrc.js)
 ```console
 module.exports = {

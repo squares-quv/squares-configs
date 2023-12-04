@@ -1,6 +1,6 @@
 module.exports = {
     extends: ["plugin:import/errors", "eslint:recommended", "prettier"],
-    plugins: ["json-format", "prettier", "simple-import-sort"],
+    plugins: ["json-format", "simple-import-sort", "prettier"],
     rules: {
       "prettier/prettier": [
         "error",

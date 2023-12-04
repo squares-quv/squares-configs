@@ -6,7 +6,7 @@ module.exports = {
     rules: {
       // TypeScript에서의 일관된 타입 임포트를 유지하도록 하는 설정
       "@typescript-eslint/consistent-type-imports": [
-        "error",
+        "warn",
         {
           /**
            * prefer: "type-imports"는 타입 임포트(import type)를 사용하는 것을 선호한다는 의미

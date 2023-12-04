@@ -128,10 +128,10 @@ module.exports = {
 
 # 🚀 Squares Site
 
-- [`Squares`](https://github.com/nhn/tui.editor/tree/master/apps/editor)
-- [`QShop`](https://github.com/nhn/tui.editor/tree/master/apps/editor)
+- [`Squares`](https://team.qshop.ai/)
+- [`QShop`](https://qshop.ai/)
 
 <br>
 
 # 📜 License
-This software is licensed under the MIT © [Squares]([squares](https://team.qshop.ai/))
+This software is licensed under the MIT © [`Squares`](https://team.qshop.ai/)

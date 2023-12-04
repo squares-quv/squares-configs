@@ -1,15 +1,23 @@
-![img](https://cdn.qshop.ai/84/gallery/6b899130697211ee9beeabaccec472a7.png)
+<p align="left">
+  <a href="https://npmjs.org/package/@squares/eslint-plugin">
+    <img src="https://img.shields.io/npm/v/@squares/eslint-plugin.svg"
+         alt="npm version">
+  </a>
+  <a href="https://github.com/jsx-eslint/@squares/eslint-plugin/blob/HEAD/LICENSE.md">
+    <img src="https://img.shields.io/npm/l/@squares/eslint-plugin.svg"
+         alt="license">
+  </a>
+</p>
+<br>
 
-# 🚀 Squares Site
+![6b899130697211ee9beeabaccec472a7](https://github.com/squares-quv/squares-configs/assets/150637735/b80c246a-9245-48e2-943c-4d3c96740349)
 
-- [`Squares`](https://github.com/nhn/tui.editor/tree/master/apps/editor)
-- [`QShop`](https://github.com/nhn/tui.editor/tree/master/apps/editor)
+# ⚙️ Squares Configs
+ESLint plugin for Squares
 
 <br>
 
-# ⚙️ Squares Configs
-
-## 💾 Install
+## 💾 Installation
 #### npm
 ```console
 npm install -D @squares/eslint-plugin eslint prettier
@@ -18,6 +26,7 @@ npm install -D @squares/eslint-plugin eslint prettier
 ```console
 yarn add -D @squares/eslint-plugin eslint prettier
 ```
+<br>
 
 ## 🔨Usage
 #### Your Project (.esilntrc.js)
@@ -35,6 +44,7 @@ module.exports = {
   extends: ["plugin:@squares/auto"],
 }
 ```
+<br>
 
 ## 📙 auto config 설명
 #### plugins
@@ -52,6 +62,8 @@ module.exports = {
 |option|value|description|
 |------|------|------|
 |react/prop-types|off|props의 유효성 검사를 하는데 사용되는 설정으로 typescript를 사용하는 경우 중복된 유효성 검사를 수행하게 되므로 off 처리|
+
+<br>
 
 ## 📙 base config 설명
 #### extends
@@ -76,6 +88,8 @@ module.exports = {
 |arrowParens|avoid|한줄로 작성하는 함수의 매개변수 괄호 생략 가능, always: 모든 함수 매개변수에 괄호 추가 (2.0v 이후 기본 값 always) |
 |useTabs|false|프로젝트에 남아 있는 prettier 설정 파일과 충돌을 피하기 위해 현재 설정한 eslint 설정만 사용하겠다는 옵션으로 false 처리, true인 경우 prettier설정을 설정 파일을 별도로 인식하여 사용 한다.|
 
+<br>
+
 ## 📙 react config 설명
 #### plugins
 
@@ -91,6 +105,8 @@ module.exports = {
 |no-console|0|console 사용을 위해 off|
 |no-unused-vars|warn|정의 후 사용하지 않는 변수는 경고만 하기|
 
+<br>
+
 ## 📙 typescript config 설명
 
 #### parser
@@ -105,3 +121,15 @@ module.exports = {
 |@typescript-eslint/consistent-type-imports||error|TypeScript에서의 일관된 타입 임포트를 유지하도록 하는 설정|
 ||prefer|type-imports|타입 임포트(import type)를 사용하는 것을 권장<br>타입 정보를 명확하게 분리하여 구분할 수 있는 장점이 있음<br>예시)<br>```export type { User } from './user';```|
 ||disallowTypeAnnotations|warn|react hooks 에서 의존성 배열을 관리가 문제가 있는 경우 warning 처리, 의도된 의존성 처리가 있을 경우가 있기 때문에 warning 만 표시|
+
+<br>
+
+# 🚀 Squares Site
+
+- [`Squares`](https://github.com/nhn/tui.editor/tree/master/apps/editor)
+- [`QShop`](https://github.com/nhn/tui.editor/tree/master/apps/editor)
+
+<br>
+
+# 📜 License
+This software is licensed under the MIT © [Squares]([squares](https://team.qshop.ai/))

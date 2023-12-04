@@ -1,5 +1,11 @@
 # @squares/eslint-plugin
 
+## 0.0.4
+
+### Patch Changes
+
+- 8bd7c96: README.md 파일 링크 사이트 및 문구 url 변경
+
 ## 0.0.3
 
 ### Patch Changes

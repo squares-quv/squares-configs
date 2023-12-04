@@ -1,5 +1,11 @@
 # @squares/eslint-plugin
 
+## 0.0.5
+
+### Patch Changes
+
+- e2baa7f: README.md vscode setting description 추가
+
 ## 0.0.4
 
 ### Patch Changes

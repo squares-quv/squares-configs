@@ -1,0 +1,16 @@
+# zero install을 사용하지 않을 경우 .pnp 주석 해제 
+#.pnp.*
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+yarn-error.log
+node_modules
+.ultra.cache.json
+
+dist
+lib

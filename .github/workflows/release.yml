@@ -1,0 +1,49 @@
+name: Release Packages
+
+on:
+  push:
+    branches:
+      - main
+# main 브랜치에 push 이벤트가 발생했을 때 실행되는 job
+jobs:
+  release:
+    name: Release Packages
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    # 레파지토리를 Checkout, 해당 동작은 우리 레포의 히스토리를 읽어서 changeset이 changelog와 알맞은 커밋을 할 수 있도록 함
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      # github action 환경을 node 18 버전
+      - name: Setup Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      # node_modules가 github action 환경에서 캐싱 되어 있으면 그걸 사용
+      - name: Use cached node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: nodeModules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            nodeModules-
+      # yarn install 명령어로 의존성을 설치
+      - name: Install Dependencies
+        run: yarn install --immutable
+      # yarn build로 build를 실행
+      - name: Build
+        run: yarn build
+      # yarn release 명령어와 yarn version으로 changeset을 이용해서 패키지를 배포하고, 풀리퀘스트를 생성
+      - name: 릴리즈 Pull Request를 만들거나 패키지를 배포
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: yarn release
+          version: yarn version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
